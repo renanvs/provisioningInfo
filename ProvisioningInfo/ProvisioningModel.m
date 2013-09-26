@@ -9,20 +9,19 @@
 #import "ProvisioningModel.h"
 
 @implementation ProvisioningModel
-@synthesize AppIDName;
-@synthesize CreationData;
-@synthesize DeveloperCertificates;
-
-@synthesize ApplicationIdentifier;
-@synthesize ExpirationDate;
-@synthesize Name;
-
-@synthesize ProvisiongDevices;
-@synthesize TeamIdentifier;
-@synthesize TeamName;
-@synthesize Version;
-
-@synthesize Folder;
+//@synthesize AppIDName;
+//@synthesize CreationData;
+//
+//@synthesize ApplicationIdentifier;
+//@synthesize ExpirationDate;
+//@synthesize Name;
+//
+//@synthesize ProvisiongDevices;
+//@synthesize TeamIdentifier;
+//@synthesize TeamName;
+//@synthesize Version;
+//
+//@synthesize Folder;
 
 
 

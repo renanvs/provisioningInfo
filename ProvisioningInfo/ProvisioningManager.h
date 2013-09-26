@@ -12,7 +12,10 @@
 
 @interface ProvisioningManager : NSObject{
     CommandLine *command;
+	NSMutableArray *provisioningList;
 }
 
 -(NSArray*)getProvisioningModelByFilePath:(NSString*)filePath;
+@property (strong) NSMutableArray *provisioningList;
+
 @end

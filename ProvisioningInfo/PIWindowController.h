@@ -18,6 +18,6 @@
 - (IBAction)remove:(id)sender;
 - (IBAction)refresh:(id)sender;
 - (IBAction)add:(id)sender;
-@property (weak) IBOutlet NSTableView *provisioningTableView;
+@property (assign) IBOutlet NSTableView *provisioningTableView;
 
 @end

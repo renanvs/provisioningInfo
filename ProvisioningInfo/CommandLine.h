@@ -16,6 +16,6 @@
 
 -(void)taskLaunchCommand:(NSString *)commandLine;
 
-@property NSString *currentDirectoryPath;
+@property (assign) NSString *currentDirectoryPath;
 
 @end

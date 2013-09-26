@@ -10,19 +10,18 @@
 
 @interface ProvisioningModel : NSObject
 
-@property (weak) NSString *AppIDName;
-@property (weak) NSString *CreationData;
-@property (weak) NSString *DeveloperCertificates;
+@property (assign) NSString *AppIDName;
+@property (assign) NSString *CreationData;
 
-@property (weak) NSString *ApplicationIdentifier;
-@property (weak) NSString *ExpirationDate;
-@property (weak) NSString *Name;
+@property (assign) NSString *ApplicationIdentifier;
+@property (assign) NSString *ExpirationDate;
+@property (assign) NSString *Name;
 
-@property (weak) NSArray *ProvisiongDevices;
-@property (weak) NSString *TeamIdentifier;
-@property (weak) NSString *TeamName;
-@property (weak) NSString *Version;
+@property (assign) NSArray *ProvisiongDevices;
+@property (assign) NSString *TeamIdentifier;
+@property (assign) NSString *TeamName;
+@property (assign) NSString *Version;
 
-@property (weak) NSString *Folder;
+@property (assign) NSString *Path;
 
 @end
