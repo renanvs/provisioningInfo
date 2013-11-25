@@ -7,10 +7,8 @@
 //
 
 #import "PIWindowController.h"
-
-@interface PIWindowController ()
-
-@end
+#import "ProvisioningModel.h"
+#import "ProvisionigCell.h"
 
 @implementation PIWindowController
 
@@ -52,10 +50,31 @@
         if (range.length != 0){
             url = [url stringByReplacingOccurrencesOfString:@"file://localhost" withString:@""];
             NSArray *list =  [manager getProvisioningModelByFilePath:url];
+            NSLog(@"log");
         }
     
     }
 }
     
+-(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView{
+    return [manager provisioningList].count;
+}
+
+-(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
+    ProvisioningModel *model = [manager.provisioningList objectAtIndex:row];
+    NSString *identifier = @"MainCell";
+    
+    if ([[tableColumn identifier] isEqualToString:identifier]) {
+        ProvisionigCell *cell = (ProvisionigCell*)[tableView makeViewWithIdentifier:identifier owner:self];
+        [cell setModel:model];
+        return cell;
+    }
+    
+    return nil;
+    
+    
+}
+
+
 
 @end
