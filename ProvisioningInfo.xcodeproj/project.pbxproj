@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E45FBCA18441252004CC5C0 /* ProvisioningCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E45FBC918441252004CC5C0 /* ProvisioningCellView.m */; };
 		1E5EB61117F3B579005690D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5EB61017F3B579005690D6 /* Cocoa.framework */; };
 		1E5EB61B17F3B579005690D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E5EB61917F3B579005690D6 /* InfoPlist.strings */; };
 		1E5EB61D17F3B579005690D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EB61C17F3B579005690D6 /* main.m */; };
@@ -24,8 +25,6 @@
 		1E5EB64E17F3BC65005690D6 /* ProvisioningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EB64D17F3BC65005690D6 /* ProvisioningManager.m */; };
 		1E5EB65117F3BC76005690D6 /* ProvisioningModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5EB65017F3BC76005690D6 /* ProvisioningModel.m */; };
 		1EE9798F17F49C3D006BF72F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE9798E17F49C3D006BF72F /* libz.dylib */; };
-		1EFBFB091842E34F004999EA /* ProvisionigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBFB081842E34F004999EA /* ProvisionigCell.m */; };
-		1EFBFB0B1842E375004999EA /* ProvisioningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EFBFB0A1842E375004999EA /* ProvisioningCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E45FBC818441252004CC5C0 /* ProvisioningCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProvisioningCellView.h; path = ProvisioningInfo/Views/ProvisioningCellView.h; sourceTree = "<group>"; };
+		1E45FBC918441252004CC5C0 /* ProvisioningCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProvisioningCellView.m; path = ProvisioningInfo/Views/ProvisioningCellView.m; sourceTree = "<group>"; };
 		1E5EB60D17F3B579005690D6 /* ProvisioningInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvisioningInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5EB61017F3B579005690D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1E5EB61317F3B579005690D6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,9 +69,6 @@
 		1E5EB64F17F3BC76005690D6 /* ProvisioningModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProvisioningModel.h; path = ProvisioningInfo/ProvisioningModel.h; sourceTree = "<group>"; };
 		1E5EB65017F3BC76005690D6 /* ProvisioningModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProvisioningModel.m; path = ProvisioningInfo/ProvisioningModel.m; sourceTree = "<group>"; };
 		1EE9798E17F49C3D006BF72F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		1EFBFB071842E34F004999EA /* ProvisionigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProvisionigCell.h; path = ProvisioningInfo/Views/ProvisionigCell.h; sourceTree = "<group>"; };
-		1EFBFB081842E34F004999EA /* ProvisionigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProvisionigCell.m; path = ProvisioningInfo/Views/ProvisionigCell.m; sourceTree = "<group>"; };
-		1EFBFB0A1842E375004999EA /* ProvisioningCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProvisioningCell.xib; path = ProvisioningInfo/Views/ProvisioningCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,9 +220,8 @@
 		1EFBFB061842E301004999EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1EFBFB071842E34F004999EA /* ProvisionigCell.h */,
-				1EFBFB081842E34F004999EA /* ProvisionigCell.m */,
-				1EFBFB0A1842E375004999EA /* ProvisioningCell.xib */,
+				1E45FBC818441252004CC5C0 /* ProvisioningCellView.h */,
+				1E45FBC918441252004CC5C0 /* ProvisioningCellView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -310,7 +307,6 @@
 				1E5EB62917F3B579005690D6 /* Images.xcassets in Resources */,
 				1E5EB64817F3B7B7005690D6 /* PIWindowController.xib in Resources */,
 				1E5EB62117F3B579005690D6 /* Credits.rtf in Resources */,
-				1EFBFB0B1842E375004999EA /* ProvisioningCell.xib in Resources */,
 				1E5EB62717F3B579005690D6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5EB65117F3BC76005690D6 /* ProvisioningModel.m in Sources */,
+				1E45FBCA18441252004CC5C0 /* ProvisioningCellView.m in Sources */,
 				1E5EB64E17F3BC65005690D6 /* ProvisioningManager.m in Sources */,
-				1EFBFB091842E34F004999EA /* ProvisionigCell.m in Sources */,
 				1E5EB64717F3B7B7005690D6 /* PIWindowController.m in Sources */,
 				1E5EB61D17F3B579005690D6 /* main.m in Sources */,
 				1E5EB62417F3B579005690D6 /* PIAppDelegate.m in Sources */,

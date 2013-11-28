@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "CommandLine.h"
 #import "ProvisioningManager.h"
+#import "ProvisioningCellView.h"
 
 @interface PIWindowController : NSWindowController <NSTableViewDataSource, NSTableViewDelegate>{
     CommandLine *command;

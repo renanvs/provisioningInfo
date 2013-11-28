@@ -8,7 +8,7 @@
 
 #import "PIWindowController.h"
 #import "ProvisioningModel.h"
-#import "ProvisionigCell.h"
+#import "ProvisioningCellView.h"
 
 @implementation PIWindowController
 
@@ -30,6 +30,8 @@
 }
 
 - (IBAction)remove:(id)sender {
+    NSButton *bt = [[NSButton alloc] initWithFrame:NSRectFromCGRect(CGRectMake(0, 0, 50, 50))];
+    [bt setTitle:@"teste"];
 }
 
 - (IBAction)refresh:(id)sender {
@@ -65,7 +67,8 @@
     NSString *identifier = @"MainCell";
     
     if ([[tableColumn identifier] isEqualToString:identifier]) {
-        ProvisionigCell *cell = (ProvisionigCell*)[tableView makeViewWithIdentifier:identifier owner:self];
+        ProvisioningCellView *cell = (ProvisioningCellView*)[tableView makeViewWithIdentifier:identifier owner:self];
+        [model retain];
         [cell setModel:model];
         return cell;
     }
